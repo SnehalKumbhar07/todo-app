@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Smart Todo</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="stats">
+        <div class="card"><h4>TOTAL</h4><span id="total">0</span></div>
+        <div class="card"><h4>DONE</h4><span id="done">0</span></div>
+        <div class="card"><h4>PENDING</h4><span id="pending">0</span></div>
+        <div class="card"><h4>PROGRESS</h4><span id="progress">0%</span></div>
+    </div>
+
+    <div class="progress-wrap">
+        <div id="progressBar"></div>
+    </div>
+
+    <div class="add-section">
+        <input id="taskInput" placeholder="Add task..." />
+        <button onclick="addTask()">+</button>
+    </div>
+
+    <div class="search-box">
+        <input id="searchInput" onkeyup="searchTasks()" placeholder="Search..." />
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>TASK</th>
+                <th>STATUS</th>
+                <th>ACTIONS</th>
+            </tr>
+        </thead>
+        <tbody id="taskList"></tbody>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

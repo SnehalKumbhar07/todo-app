@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f7f8fc;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* STATS */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card {
+    padding: 25px;
+    border-right: 1px solid #eee;
+}
+
+.card:last-child {
+    border-right: none;
+}
+
+.card h4 {
+    color: #6b7280;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.card span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.card:nth-child(1) span { color: #6d28d9; }
+.card:nth-child(2) span { color: #10b981; }
+.card:nth-child(3) span { color: #f59e0b; }
+.card:nth-child(4) span { color: #3b82f6; }
+
+/* PROGRESS BAR */
+.progress-wrap {
+    margin-top: 20px;
+    height: 12px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progressBar {
+    height: 100%;
+    width: 0%;
+    background: #3b82f6;
+    transition: 0.3s;
+}
+
+/* ADD TASK */
+.add-section {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.add-section input {
+    flex: 1;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 2px solid #ff00c8;
+}
+
+.add-section button {
+    width: 60px;
+    font-size: 30px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff00c8, #ff4fd8);
+    color: white;
+    cursor: pointer;
+}
+
+/* SEARCH */
+.search-box {
+    margin-top: 25px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+th {
+    text-align: left;
+    padding: 20px;
+    background: #f3f4f6;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+td {
+    padding: 18px;
+    font-size: 18px;
+    border-top: 1px solid #eee;
+}
+
+/* STATUS */
+.done {
+    background: #d1fae5;
+    color: #047857;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.pending {
+    background: #fef3c7;
+    color: #b45309;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* BUTTONS */
+button {
+    border: none;
+    padding: 8px 10px;
+    margin-right: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:nth-child(1) {
+    background: #10b981;
+    color: white;
+}
+
+button:nth-child(2) {
+    background: #3b82f6;
+    color: white;
+}
+
+button:nth-child(3) {
+    background: #ef4444;
+    color: white;
+}
